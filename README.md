@@ -18,35 +18,6 @@ A multi-page React portfolio, focused on software development with supporting st
 - `/projects/:slug` — Individual case studies
 - `/contact` — Contact form and direct links
 
-## Local development
-
-```bash
-npm install
-npm run dev
-```
-
-For a production check:
-
-```bash
-npm run build
-npm run preview
-```
-
-## Contact form setup
-
-Create `.env.local` from `.env.example` and provide your EmailJS values:
-
-```env
-VITE_CONTACT_EMAIL=your-email@example.com
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-```
-
-`.env.local` is ignored by Git and should not be committed.
-
-The EmailJS template should accept `from_name`, `from_email`, `reply_to`, `message`, and optionally `to_email`.
-
 ## Project assets
 
 Static assets live in `public/assets/`. Project screenshots used by the current portfolio are under `public/assets/projects/`.
